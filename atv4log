@@ -1,0 +1,15 @@
+numero1 = int(input('Insira um número: '))
+numero2 = int(input('Insira outro número: '))
+
+soma = 0
+numero_par = False  
+
+for i in range(numero1, numero2):
+    if i % 2 == 0:
+        soma += i
+        numero_par = True  
+
+if numero_par:
+    print(f'A soma dos números pares entre {numero1} e {numero2} é: {soma}')
+else:
+    print('Não existem números pares no intervalo.')
